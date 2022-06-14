@@ -6,40 +6,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
+
 <body>
-  <button type="button" class="collapsible">A</button>
+  <p>
 
+  <div class="main_titles">
+    <h1>DHCP</h1>
+  </div>
+  </p>
+  <button type="button" class="collapsible">ubus call dhcp ipv4leases</button>
   <div class="content">
+    <p>
+    <pre>{
+        "device": {
 
-    <p>uifhuifh</p>
+        }
+}</pre>
+    </p>
 
   </div>
 
-  <button type="button" class="collapsible">B</button>
+  <button type="button" class="collapsible">ubus call file list {path:/etc/wsplcd}</button>
 
   <div class="content">
 
-    <p>jksdfbsjdfb</p>
+    <p>
+    <pre>{
+        {
+        "path": "\/etc\/config.hash",
+        "type": "file",
+        "size": 24,
+        "mode": 33188,
+        "atime": 1651247958,
+        "mtime": 1651247958,
+        "ctime": 1652277327,
+        "inode": 450,
+        "uid": 0,
+        "gid": 0
+}
+}</pre>
+    </p>
 
   </div>
 
-  <button type="button" class="collapsible">C</button>
+  <button type="button" class="collapsible">ubus call file read {path:/etc/config.hash}</button>
+  <div class="content">
+    <p>
+    <pre>
+      {
+        "data": "6RChXiluzm6EelP6R3lKTQ=="
+      }
+</pre>
+    </p>
+
+  </div>
+
+  <button type="button" class="collapsible">ubus call hostapd.ath0 get_clients</button>
 
   <div class="content">
 
-    <p>rgfdgd</p>
+    <p>
+    <pre>
+{
+        "freq": 0,
+        "clients": {
+                "00:b8:b6:31:54:32": {
+                        "auth": true,
+                        "assoc": true,
+                        "authorized": true,
+                        "preauth": false,
+                        "wds": false,
+                        "wmm": false,
+                        "ht": false,
+                        "vht": false,
+                        "wps": false,
+                        "mfp": false,
+                        "rrm": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                        ],
+                        "aid": 0
+                },
+        }
+}
+      </pre>
+    </p>
 
   </div>
 
-  <button type="button" class="collapsible">D</button>
 
-  <div class="content">
-
-    <p>fdgfdg</p>
-
-  </div>
 
   <script type="text/javascript" src="scripts/index.js"></script>
 
 </body>
+
 </html>
