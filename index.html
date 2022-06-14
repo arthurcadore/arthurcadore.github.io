@@ -8,113 +8,155 @@
 </head>
 
 <body>
-  <p>
+
 
   <div class="main_titles">
     <h1>DHCP</h1>
   </div>
-  </p>
+
+
+
   <button type="button" class="collapsible">ubus call dhcp ipv4leases</button>
   <div class="content">
-
-
     <p>Decrição a colocar</p>
+    <p>Retorno: </p>
+    <p>
+    <pre class="code">
+{
+        "device": {
 
-
-       <p>Retorno: </p>
-
-
-      <p>
-      <pre class="code">{
-        {
-        "path": "\/etc\/config.hash",
-        "type": "file",
-        "size": 24,
-        "mode": 33188,
-        "atime": 1651247958,
-        "mtime": 1651247958,
-        "ctime": 1652277327,
-        "inode": 450,
-        "uid": 0,
-        "gid": 0
+        }
 }
-}</pre>
-      </p>
+   </pre>
+  </div>
 
+  <button type="button" class="collapsible">ubus call dhcp ipv6leases</button>
+  <div class="content">
+    <p>Decrição a colocar</p>
+    <p>Retorno: </p>
+    <p>
+    <pre class="code">
+{
+        "device": {
 
+        }
+}
+   </pre>
+  </div>
 
-
+  <div class="main_titles">
+    <h1>FILE</h1>
   </div>
 
   <button type="button" class="collapsible">ubus call file list {path:/etc/wsplcd}</button>
-
   <div class="content">
+    <p>Decrição a colocar</p>
+    <p>Retorno: </p>
     <p>
-    <pre>{
-        {
-        "path": "\/etc\/config.hash",
-        "type": "file",
-        "size": 24,
-        "mode": 33188,
-        "atime": 1651247958,
-        "mtime": 1651247958,
-        "ctime": 1652277327,
-        "inode": 450,
-        "uid": 0,
-        "gid": 0
-}
-}</pre>
-    </p>
+    <pre class="code">
+{
+        "device": {
 
+        }
+}
+   </pre>
   </div>
+
 
   <button type="button" class="collapsible">ubus call file read {path:/etc/config.hash}</button>
   <div class="content">
+    <p>Decrição a colocar</p>
+    <p>Retorno: </p>
     <p>
-    <pre>
-      {
-        "data": "6RChXiluzm6EelP6R3lKTQ=="
-      }
-</pre>
-    </p>
-
-  </div>
-
-  <button type="button" class="collapsible">ubus call hostapd.ath0 get_clients</button>
-
-  <div class="content">
-
-    <p>
-    <pre>
+    <pre class="code">
 {
-        "freq": 0,
-        "clients": {
-                "00:b8:b6:31:54:32": {
-                        "auth": true,
-                        "assoc": true,
-                        "authorized": true,
-                        "preauth": false,
-                        "wds": false,
-                        "wmm": false,
-                        "ht": false,
-                        "vht": false,
-                        "wps": false,
-                        "mfp": false,
-                        "rrm": [
-                                0,
-                                0,
-                                0,
-                                0,
-                                0
-                        ],
-                        "aid": 0
-                },
+        "device": {
+
         }
 }
-      </pre>
-    </p>
-
+   </pre>
   </div>
+
+  <button type="button" class="collapsible">ubus call file stat {path:/etc/config.hash}</button>
+  <div class="content">
+    <p>Decrição a colocar</p>
+    <p>Retorno: </p>
+    <p>
+    <pre class="code">
+{
+        "device": {
+
+        }
+}
+   </pre>
+  </div>
+
+  <button type="button" class="collapsible">ubus call file md5 {path:/etc/config.hash}</button>
+  <div class="content">
+    <p>Decrição a colocar</p>
+    <p>Retorno: </p>
+    <p>
+    <pre class="code">
+{
+        "device": {
+
+        }
+}
+   </pre>
+  </div>
+
+  <button type="button" class="collapsible">ubus call file write {path:/etc/teste.txt,data:informacao a ser escrita}</button>
+  <div class="content">
+    <p>Decrição a colocar</p>
+    <p>Retorno: </p>
+    <p>
+    <pre class="code">
+{
+        "device": {
+
+        }
+}
+   </pre>
+  </div>
+
+  <button type="button" class="collapsible_error">"exec":{"command":"String","params":"Array","env":"Table"}</button>
+  <div class="content">
+    <p>Decrição a colocar</p>
+    <p>Retorno: </p>
+    <p>
+    <pre class="code">
+{
+        "device": {
+
+        }
+}
+   </pre>
+  </div>
+
+  <div class="main_titles">
+    <h1>ITB.BUTTON</h1>
+  </div>
+
+
+
+  <button type="button" class="collapsible">ubus call itb.button list</button>
+  <div class="content">
+    <p>Decrição a colocar</p>
+    <p>Retorno: </p>
+    <p>
+    <pre class="code">
+{
+        "list": [
+                "failsafe",
+                "power",
+                "reset",
+                "rfkill"
+        ]
+}
+   </pre>
+  </div>
+
+
 
 
 
