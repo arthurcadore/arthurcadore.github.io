@@ -8,6 +8,16 @@ body {
     text-align: center;
   }
   
+  .table_content{
+  
+  padding: 18px;
+  
+  width: 100%;
+  
+  text-align: center;
+  
+  }
+  
   .collapsible {
   
       background-color: green;
@@ -38,7 +48,12 @@ body {
     
     }
     
-    
+    .code{
+  
+      background-color: lightgray;
+      padding: 10px;
+      border: 2px solid gray;
+    }
     
     .content {
     
