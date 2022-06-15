@@ -1,166 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <link href="web/index.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMANDOS SSH - ZEUS OS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="web/index.css">
 </head>
 
 <body>
+  
+
+  <section class="container">
+    <div id="menu">
+      <ul>
+        <li><a href="#cod1">TESTE</a></li>
+        <li><a href="#cod2">link2</a></li>
+        <li><a href="#cod3">link3</a></li>
+        <li><a href="#cod4">link4</a></li>
+        <li><a href="#cod5">link5</a></li>
+      </ul>
+    </div>
+    <section class="content-flex">
 
 
-  <div class="main_titles">
-    <h1>DHCP</h1>
-  </div>
+      <!-- LOGO -->
+      <img class="logo" src="https://logodownload.org/wp-content/uploads/2016/09/intelbras-logo-6-2.png" width=150
+        height=30>
 
+      <!-- DESCRIÇÃO INICIAL -->
+      <p class="main-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
+        feugiat, ut lobortis neque aliquet.</p>
 
+      <!-- COMEÇO DA CATEG. DHCP -->
+      <h1 class="category"><i class="fa-solid fa-folder-tree"></i> DHCP</h1>
+      <div   id="cod1" class="content-link">
+        <a class="title" href="#"># ubus call dhcp ipv4 leases</a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
+          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
+          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
+          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+      </div>
 
-  <button type="button" class="collapsible">ubus call dhcp ipv4leases</button>
-  <div class="content">
-    <p>Decrição a colocar</p>
-    <p>Retorno: </p>
-    <p>
-    <pre class="code">
-{
-        "device": {
+      <!-- CÓDIGO 1 -->
+      <div class="code">
+        <p class="title-code">ubus call dhcp ipv4 leases</p>
+        <pre>
+          {
+                  "device": {
 
-        }
-}
-   </pre>
-  </div>
+                  }
+          }
+        </pre>
+      </div>
+      <div class="content-link">
+        <a class="title" href="#"># ubus call dhcp ipv6 leases</a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
+          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
+          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
+          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+      </div>
 
-  <button type="button" class="collapsible">ubus call dhcp ipv6leases</button>
-  <div class="content">
-    <p>Decrição a colocar</p>
-    <p>Retorno: </p>
-    <p>
-    <pre class="code">
-{
-        "device": {
+      <!-- CÓDIGO 2 -->
+      <div id="cod2" class="code">
+        <p class="title-code">ubus call dhcp ipv6 leases</p>
+        <pre>
+          {
+                  "device": {
 
-        }
-}
-   </pre>
-  </div>
+                  }
+          }
+        </pre>
+      </div>
 
-  <div class="main_titles">
-    <h1>FILE</h1>
-  </div>
+      <!-- COMEÇO DA CATEG. FILE -->
+      <h1 class="category"><i class="fa-solid fa-folder-tree"></i> FILE</h1>
+      <div class="content-link">
+        <a class="title" href="#"># ubus call file list {path:/etc/wsplcd}</a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
+          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
+          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
+          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+      </div>
+      <!-- CÓDIGO 3 -->
+      <div id="cod3" class="code">
+        <p class="title-code">ubus call file list {path:/etc/wsplcd}</p>
+        <pre>
+          {
+                  "device": {
 
-  <button type="button" class="collapsible">ubus call file list {path:/etc/wsplcd}</button>
-  <div class="content">
-    <p>Decrição a colocar</p>
-    <p>Retorno: </p>
-    <p>
-    <pre class="code">
-{
-        "device": {
+                  }
+          }
+        </pre>
+      </div>
 
-        }
-}
-   </pre>
-  </div>
+      <div class="content-link">
+        <a class="title-error" href="#"># "exec":{"command":"String","params":"Array","env":"Table"}</a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
+          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
+          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
+          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+      </div>
 
+      
 
-  <button type="button" class="collapsible">ubus call file read {path:/etc/config.hash}</button>
-  <div class="content">
-    <p>Decrição a colocar</p>
-    <p>Retorno: </p>
-    <p>
-    <pre class="code">
-{
-        "device": {
+      
 
-        }
-}
-   </pre>
-  </div>
+      
 
-  <button type="button" class="collapsible">ubus call file stat {path:/etc/config.hash}</button>
-  <div class="content">
-    <p>Decrição a colocar</p>
-    <p>Retorno: </p>
-    <p>
-    <pre class="code">
-{
-        "device": {
+      <!-- CÓDIGO 4 -->
+      <div id="cod4" class="code-error">
+        <p class="title-code">"exec":{"command":"String","params":"Array","env":"Table"}</p>
+        <pre>
+          {
+                  "device": {
 
-        }
-}
-   </pre>
-  </div>
+                  }
+          }
+        </pre>
+      </div>
 
-  <button type="button" class="collapsible">ubus call file md5 {path:/etc/config.hash}</button>
-  <div class="content">
-    <p>Decrição a colocar</p>
-    <p>Retorno: </p>
-    <p>
-    <pre class="code">
-{
-        "device": {
-
-        }
-}
-   </pre>
-  </div>
-
-  <button type="button" class="collapsible">ubus call file write {path:/etc/teste.txt,data:informacao a ser escrita}</button>
-  <div class="content">
-    <p>Decrição a colocar</p>
-    <p>Retorno: </p>
-    <p>
-    <pre class="code">
-{
-        "device": {
-
-        }
-}
-   </pre>
-  </div>
-
-  <button type="button" class="collapsible_error">"exec":{"command":"String","params":"Array","env":"Table"}</button>
-  <div class="content">
-    <p>Decrição a colocar</p>
-    <p>Retorno: </p>
-    <p>
-    <pre class="code">
-{
-        "device": {
-
-        }
-}
-   </pre>
-  </div>
-
-  <div class="main_titles">
-    <h1>ITB.BUTTON</h1>
-  </div>
-
-
-
-  <button type="button" class="collapsible">ubus call itb.button list</button>
-  <div class="content">
-    <p>Decrição a colocar</p>
-    <p>Retorno: </p>
-    <p>
-    <pre class="code">
-{
-        "list": [
-                "failsafe",
-                "power",
-                "reset",
-                "rfkill"
-        ]
-}
-   </pre>
-  </div>
-
-
-
-
-
-  <script type="text/javascript" src="scripts/index.js"></script>
+    </section>
+  </section>
 
 </body>
 
