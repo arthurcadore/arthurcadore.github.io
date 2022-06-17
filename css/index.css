@@ -10,6 +10,12 @@ body {
   font-weight: bold;
 }
 
+.logo {
+ height:120px;
+ width: 600px;
+ object-fit: contain;
+}
+
 .flex {
 	display: flex;
 }
