@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+body {
+  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  background-color:#03090d;
+  color: white;
+  line-height: 30px;
+}
+
+.menu-container{
+  padding: 10px;
+  text-align: center;
+}
+
+.table{
+  padding: 20px;
+  width: 100%;
+  margin: 20px;
+}
+
+.table_header{
+  padding: 200px;
+  width: 100%;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+.table_cell{
+  border-radius: 20px;
+  padding: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  vertical-align: middle;
+  display: table-cell;
+  color: mediumspringgreen;
+  background-color: rgb(0, 39, 24);
+  box-shadow: rgb(0 249 110 / 10%) 0px 0px 20px 0px;
+  margin: 20px;
+  margin-bottom: 50px;
+
+}
