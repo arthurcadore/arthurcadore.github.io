@@ -9,35 +9,39 @@ body {
   line-height: 30px;
 }
 
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-item-1 {
+	flex: 1;
+}
+
 .menu-container{
   padding: 10px;
   text-align: center;
 }
 
-.table{
-  padding: 20px;
-  width: 100%;
-  margin: 20px;
-}
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+	display: flex;
+  padding: 20px 20px 20px 20px;
+  justify-content: space-evenly;
 
-.table_header{
-  padding: 200px;
-  width: 100%;
-  border-radius: 50px;
-  margin: 20px;
-}
+  }
 
-.table_cell{
-  border-radius: 20px;
-  padding: 50px;
-  font-size: 40px;
-  font-weight: bold;
-  vertical-align: middle;
-  display: table-cell;
+.item {
+  width: 10%;
+  font-size: 50px;
+  padding: 30px 150px 30px 150px;
+  border-radius: 10px;
   color: mediumspringgreen;
   background-color: rgb(0, 39, 24);
   box-shadow: rgb(0 249 110 / 10%) 0px 0px 20px 0px;
-  margin: 20px;
-  margin-bottom: 50px;
-
+  
 }
