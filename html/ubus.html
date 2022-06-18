@@ -480,46 +480,41 @@
     
     <section class="content-flex">
 
-      <!-- DESCRIÇÃO INICIAL -->
 
-      <p class="main-description">
-        Para fornecer comunicação entre processos entre vários daemons e aplicativos instalados no OpenWrt (distribuição linux instalada nos APs, voltada para a wireless), um projeto chamado “ubus” foi desenvolvido. 
-        Ele consiste em várias partes, incluindo um daemon próprio para atuar em segundo plano, biblioteca e alguns auxiliares extras.
-        O coração deste projeto é o “ubusd” daemon. Ele fornece uma interface para que outros daemons se registrem e enviem mensagens. 
-        </p>
 
       <!-- COMEÇO DA CATEG. DHCP -->
-      <h1 class="category"><i class="fa-solid fa-folder-tree"></i> DHCP</h1>
+      <h1 class="category"><i class="fa-solid fa-folder-tree"></i> UBUS (MICRO BUS)</h1>
 
       <!-- COMEÇO DA DESCRIÇÃO PRIMEIRO ITEM -->
       <div id="cod1" class="content-link">
-        <span class="title" id="a">ubus call dhcp ipv4 leases</span>
-        <span class="title-code" onclick="copyCode(document.getElementById('a').innerHTML)">copiar</span>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices
-          vulputate.
-          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+        <span class="title">ubus (OpenWrt micro bus architecture)</span>
+       
+        <p class="description">Para fornecer comunicação entre processos entre vários daemons e aplicativos instalados no OpenWrt (distribuição linux instalada nos APs, voltada para a wireless), um projeto chamado “ubus” foi desenvolvido. Ele consiste em várias partes, incluindo um daemon próprio para atuar em segundo plano, biblioteca e alguns auxiliares extras.
+          O coração deste projeto é o “ubusd” daemon. Ele fornece uma interface para que outros daemons se registrem e enviem mensagens. Para os curiosos, essa interface é implementada usando soquetes Unix e usa mensagens TLV (tipe-length-value) .
+          Cada daemon registra um conjunto de caminhos em um namespace específico. Cada caminho pode fornecer vários procedimentos com qualquer número de argumentos. Os procedimentos podem responder com uma mensagem.
+          A “ubus” ferramenta de linha de comando permite interagir com o deamon “ubusd” (com todos os serviços registrados atualmente). É útil para investigar/depurar configurações, bem como escrever scripts de shell. Para chamar procedimentos com parâmetros e retornar respostas, ele usa o formato JSON.
+          </p>
 
         <div class="code">
           <pre>
-          {
-                  "device": {a
-
-                  }
-          }
+         COLOCAR IMAGEM DA ARQUITETURA
         </pre>
         </div>
       </div>
 
       <!-- COMEÇO DA DESCRIÇÃO SEGUNDO ITEM -->
       <div id="cod2" class="content-link">
-        <span class="title" id="b">ubus call dhcp ipv6 leases</span>
+        <span class="title" id="b">ubus list</span>
         <span class="title-code" onclick="copyCode(document.getElementById('b').innerHTML)">copiar</span>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
-          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+        <p class="description">O ubus list é utilizado para verificar as chamadas ubus disponíveis para execução, cada chamada terá um conjunto de parâmetros individuais (métodos), e então este poderá ter vários parâmetros diferentes para cada método. Algumas das principais chamadas são:</p> 
+        <p class="description">system: lista as principais informações do sistema, como versão de firmware, memória, CPU, entre outros.</p> 
+        <p class="description">iwinfo: lista as informações da wireless do dispositivo, como os clientes conectados e status de cada interface wireless.  </p>
+          <p class="description"> uci: lista as configurações do dispositivo, as configurações são exibidas no formato “json”, onde cada parâmetro tem um valor correspondente. </p> 
+            <p class="description"> itb.system.config: lista as possíveis operações com o arquivo de configuração do sistema (backup ou reset), porém, via SSH apenas o reset está disponível.  </p>
+              <p class="description"> itb.service.cronos: lista as informações enviadas pelo server cronos. </p>
+          <p class="description"> itb.service.facebookwifi: lista as informações de conexão entre o facebook e o AP (para a operação do checkin facebook).  </p>
+            <p class="description"> network.device: lista o status da interface selecionada, com todos os valores de conexão </p>
+          
 
         <div class="code">
 
