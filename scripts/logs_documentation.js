@@ -1,4 +1,3 @@
-
 var dropdown = document.getElementsByClassName("dropdown");
 var i;
 

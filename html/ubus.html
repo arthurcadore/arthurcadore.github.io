@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COMANDOS SSH - ZEUS OS</title>
+  <title>CHAMADAS UBUS - ZEUS OS</title>
   <link rel="shortcut icon" href="../resources/img/ssh_icon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css">
   <link rel="stylesheet" href="../css/ubus.css">
@@ -17,7 +17,7 @@
       <div class="logo-container">
         <img class="logo" src="../resources/img/intelbras-logo.png" width=150
           height=30>
-        <h2>CHAMADAS DE SISTEMA - UBUS</h2>
+        <h2>CHAMADAS UBUS</h2>
 
       </div>
       <!-- Primeiro Grupo Menu Lateral -->
@@ -141,31 +141,7 @@
       </div>
     </section>
   </section>
-  <script>
-    var dropdown = document.getElementsByClassName("dropdown");
-    var i;
-
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      });
-    }
-    function copyCode(str) {
-      function listener(e) {
-        e.clipboardData.setData("text/plain", str);
-        e.preventDefault();
-      }
-      document.addEventListener("copy", listener);
-      document.execCommand("copy");
-      document.removeEventListener("copy", listener);
-    };
-  </script>
+  <script type="text/javascript" src="../scripts/ubus.js"></script>
 </body>
 
 </html>
