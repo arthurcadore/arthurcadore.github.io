@@ -23,120 +23,129 @@
       <!-- Primeiro Grupo Menu Lateral -->
       <a href="../index.html" class="dropdown back"><i class="fa-solid fa-circle-chevron-left"></i> Voltar</a>
 
-      <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> UBUS (MICRO BUS)</a>
+      <a class="dropdown" href="#cod1"><i class="fa-solid fa-folder-tree"></i> UBUS (MICRO BUS)</a>
       <div class="dropdown-container">
-        <!-- SubMenu -->
-        <a class="submenu" href="#cod1"><i class="fa-solid fa-hashtag"></i> ubus call dhcp ipv4 leases</a>
-        <!-- SubMenu -->
-        <a class="submenu" href="#cod2"><i class="fa-solid fa-hashtag"></i> ubus call dhcp ipv6 leases</a>
       </div>
-      <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> UBUS LIST</a>
+      <a class="dropdown" href="#cod2"><i class="fa-solid fa-folder-tree"></i> UBUS LIST</a>
       <div class="dropdown-container">
-        <!-- SubMenu -->
-        <a class="submenu" href="#cod1"><i class="fa-solid fa-hashtag"></i> ubus call dhcp ipv4 leases</a>
-        <!-- SubMenu -->
-        <a class="submenu" href="#cod2"><i class="fa-solid fa-hashtag"></i> ubus call dhcp ipv6 leases</a>
       </div>
+
       <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> DHCP</a>
+      <div class="dropdown-container">
+        <!-- SubMenu -->
+        <a class="submenu" href="#cod3"><i class="fa-solid fa-hashtag"></i> ubus call dhcp ipv4leases
+          </a>
+        <!-- SubMenu -->
+        <a class="submenu" href="#cod4"><i class="fa-solid fa-hashtag"></i>
+          ubus call dhcp ipv4leases</a>
+      </div>
   
       <!-- Segundo Grupo Menu Lateral -->
       <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> FILE</a>
       <div class="dropdown-container">
         <!-- SubMenu -->
-        <a class="submenu" href="#cod3"><i class="fa-solid fa-hashtag"></i> ubus call file list
-          {path:/etc/wsplcd}</a>
+        <a class="submenu" href="#cod5"><i class="fa-solid fa-hashtag"></i> 
+          ubus call file read {path:String, base64:Boolean}</a>
         <!-- SubMenu -->
-        <a class="submenu" href="#cod4"><i class="fa-solid fa-hashtag"></i>
-          "exec":{"command":"String","params":"Array","env":"Table"}</a>
+        <a class="submenu" href="#cod6"><i class="fa-solid fa-hashtag"></i>
+          ubus call file write {path:String,data:String, mode:Integer,base64:Boolean}</a>
+           <!-- SubMenu -->
+        <a class="submenu" href="#cod6"><i class="fa-solid fa-hashtag"></i>
+          ubus call file list {path : string}</a>
+           <!-- SubMenu -->
+        <a class="submenu" href="#cod6"><i class="fa-solid fa-hashtag"></i>
+          ubus call file stat {path : string}</a>
+           <!-- SubMenu -->
+        <a class="submenu" href="#cod6"><i class="fa-solid fa-hashtag"></i>
+          ubus call file exec {command:string, params:array, env:table}</a>
       </div>
 
       <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> HOSTAPD.(interface)</a>
       <div class="dropdown-container">
         <!-- SubMenu -->
-        <a class="submenu" href="#cod3"><i class="fa-solid fa-hashtag"></i> ubus call file list
-          {path:/etc/wsplcd}</a>
+        <a class="submenu" href="#cod7"><i class="fa-solid fa-hashtag"></i> "get_clients":{}</a>
         <!-- SubMenu -->
-        <a class="submenu" href="#cod4"><i class="fa-solid fa-hashtag"></i>
+        <a class="submenu" href="#cod8"><i class="fa-solid fa-hashtag"></i>
           "exec":{"command":"String","params":"Array","env":"Table"}</a>
       </div>
 
       <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> ITB.API</a>
       <div class="dropdown-container">
         <!-- SubMenu -->
-        <a class="submenu" href="#cod3"><i class="fa-solid fa-hashtag"></i> ubus call file list
+        <a class="submenu" href="#cod9"><i class="fa-solid fa-hashtag"></i> ubus call file list
           {path:/etc/wsplcd}</a>
         <!-- SubMenu -->
-        <a class="submenu" href="#cod4"><i class="fa-solid fa-hashtag"></i>
+        <a class="submenu" href="#cod10"><i class="fa-solid fa-hashtag"></i>
           "exec":{"command":"String","params":"Array","env":"Table"}</a>
       </div>
 
       <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> ITB.BUTTON</a>
       <div class="dropdown-container">
         <!-- SubMenu -->
-        <a class="submenu" href="#cod3"><i class="fa-solid fa-hashtag"></i> ubus call file list
+        <a class="submenu" href="#cod11"><i class="fa-solid fa-hashtag"></i> ubus call file list
           {path:/etc/wsplcd}</a>
         <!-- SubMenu -->
-        <a class="submenu" href="#cod4"><i class="fa-solid fa-hashtag"></i>
+        <a class="submenu" href="#cod12"><i class="fa-solid fa-hashtag"></i>
           "exec":{"command":"String","params":"Array","env":"Table"}</a>
       </div>
 
       <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> ITB.ITBCSD.PLUGINS</a>
       <div class="dropdown-container">
         <!-- SubMenu -->
-        <a class="submenu" href="#cod3"><i class="fa-solid fa-hashtag"></i> ubus call file list
+        <a class="submenu" href="#cod13"><i class="fa-solid fa-hashtag"></i> ubus call file list
           {path:/etc/wsplcd}</a>
         <!-- SubMenu -->
-        <a class="submenu" href="#cod4"><i class="fa-solid fa-hashtag"></i>
+        <a class="submenu" href="#cod14"><i class="fa-solid fa-hashtag"></i>
           "exec":{"command":"String","params":"Array","env":"Table"}</a>
       </div>
 
       <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> ITB.LEDS.MASTER</a>
       <div class="dropdown-container">
         <!-- SubMenu -->
-        <a class="submenu" href="#cod3"><i class="fa-solid fa-hashtag"></i> ubus call file list
+        <a class="submenu" href="#cod15"><i class="fa-solid fa-hashtag"></i> ubus call file list
           {path:/etc/wsplcd}</a>
         <!-- SubMenu -->
-        <a class="submenu" href="#cod4"><i class="fa-solid fa-hashtag"></i>
+        <a class="submenu" href="#cod16"><i class="fa-solid fa-hashtag"></i>
           "exec":{"command":"String","params":"Array","env":"Table"}</a>
       </div>
 
       <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> ITB.NETWORK.ARP</a>
       <div class="dropdown-container">
         <!-- SubMenu -->
-        <a class="submenu" href="#cod3"><i class="fa-solid fa-hashtag"></i> ubus call file list
+        <a class="submenu" href="#cod17"><i class="fa-solid fa-hashtag"></i> ubus call file list
           {path:/etc/wsplcd}</a>
         <!-- SubMenu -->
-        <a class="submenu" href="#cod4"><i class="fa-solid fa-hashtag"></i>
+        <a class="submenu" href="#cod18"><i class="fa-solid fa-hashtag"></i>
           "exec":{"command":"String","params":"Array","env":"Table"}</a>
       </div>
 
       <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> ITB.NETWORK.BRIDGE</a>
       <div class="dropdown-container">
         <!-- SubMenu -->
-        <a class="submenu" href="#cod3"><i class="fa-solid fa-hashtag"></i> ubus call file list
+        <a class="submenu" href="#cod19"><i class="fa-solid fa-hashtag"></i> ubus call file list
           {path:/etc/wsplcd}</a>
         <!-- SubMenu -->
-        <a class="submenu" href="#cod4"><i class="fa-solid fa-hashtag"></i>
+        <a class="submenu" href="#cod20"><i class="fa-solid fa-hashtag"></i>
           "exec":{"command":"String","params":"Array","env":"Table"}</a>
       </div>
 
       <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> ITB.NETWORK.DEVDH</a>
       <div class="dropdown-container">
         <!-- SubMenu -->
-        <a class="submenu" href="#cod3"><i class="fa-solid fa-hashtag"></i> ubus call file list
+        <a class="submenu" href="#cod21"><i class="fa-solid fa-hashtag"></i> ubus call file list
           {path:/etc/wsplcd}</a>
         <!-- SubMenu -->
-        <a class="submenu" href="#cod4"><i class="fa-solid fa-hashtag"></i>
+        <a class="submenu" href="#cod22"><i class="fa-solid fa-hashtag"></i>
           "exec":{"command":"String","params":"Array","env":"Table"}</a>
       </div>
 
       <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> ITB.NETWORK.DHCP</a>
       <div class="dropdown-container">
         <!-- SubMenu -->
-        <a class="submenu" href="#cod3"><i class="fa-solid fa-hashtag"></i> ubus call file list
+        <a class="submenu" href="#cod23"><i class="fa-solid fa-hashtag"></i> ubus call file list
           {path:/etc/wsplcd}</a>
         <!-- SubMenu -->
-        <a class="submenu" href="#cod4"><i class="fa-solid fa-hashtag"></i>
+        <a class="submenu" href="#cod24"><i class="fa-solid fa-hashtag"></i>
           "exec":{"command":"String","params":"Array","env":"Table"}</a>
       </div>
 
@@ -495,11 +504,9 @@
           A “ubus” ferramenta de linha de comando permite interagir com o deamon “ubusd” (com todos os serviços registrados atualmente). É útil para investigar/depurar configurações, bem como escrever scripts de shell. Para chamar procedimentos com parâmetros e retornar respostas, ele usa o formato JSON.
           </p>
 
-        <div class="code">
-          <pre>
-         COLOCAR IMAGEM DA ARQUITETURA
-        </pre>
-        </div>
+        
+          <img class="img_section_description" src="../resources/img/ubus_flowchart.png">
+        
       </div>
 
       <!-- COMEÇO DA DESCRIÇÃO SEGUNDO ITEM -->
@@ -519,11 +526,55 @@
         <div class="code">
 
           <pre>
-          {
-                  "device": {b
-
-                  }
-          }
+            dhcp
+            file
+            hostapd.ath0
+            hostapd.ath1
+            itb.api
+            itb.button
+            itb.itbcsd.plugins
+            itb.leds.master
+            itb.network.arp
+            itb.network.bridge
+            itb.network.devdh
+            itb.network.dhcp
+            itb.network.internet
+            itb.service
+            itb.service.checkinternet
+            itb.service.cronos
+            itb.service.facebookwifi
+            itb.service.firewall
+            itb.service.firewall.walled_garden
+            itb.service.qos
+            itb.service.radius
+            itb.service.regdb
+            itb.service.scheduling
+            itb.service.survey
+            itb.service.toggle.wifi
+            itb.statistics
+            itb.system
+            itb.system.config
+            itb.system.user
+            itb.system.var
+            itb.wireless
+            iwinfo
+            log
+            network
+            network.device
+            network.interface
+            network.interface.lan1
+            network.interface.lan1_v6
+            network.interface.loopback
+            network.interface.mngt
+            network.interface.relayIF
+            network.interface.wan
+            network.interface.wan6
+            network.interface.wwan
+            network.wireless
+            service
+            session
+            system
+            uci            
         </pre>
         </div>
       </div>

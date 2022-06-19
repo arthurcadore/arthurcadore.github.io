@@ -18,6 +18,10 @@ body {
   background: #005231;
 }
 
+.img_section_description{
+  border-radius: 20px;
+}
+
 a {
   color: white;
   text-decoration: none;
