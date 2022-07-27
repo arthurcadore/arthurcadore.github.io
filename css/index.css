@@ -10,7 +10,6 @@ body {
 }
 
 .img-header{
-
   border-radius: 40px;
   border:solid;
   border-width: 3px;
@@ -69,6 +68,8 @@ body {
   height: 3rem;
   background-color: inherit;
   border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .nav>button:hover {
@@ -80,9 +81,13 @@ body {
   height: 3rem;  
   background-color: inherit;
   border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .button-container>button:hover {
+
+  
 
 }
 
