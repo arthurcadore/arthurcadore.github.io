@@ -1,12 +1,11 @@
 body {
-padding: 0;
+  padding: 0;
   margin: 0;
 }
 
 .screen {
   height: 100vh;
   width: 100vw;
-
   display: flex;
 }
 
@@ -23,13 +22,11 @@ padding: 0;
 .about-me {
   width: 30%;
   height: 100vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: rgb(204, 204, 204);
-
   position: relative;
 }
 .divisor{
@@ -45,7 +42,6 @@ padding: 0;
 
 .information {
   flex: 1;
-
   background: rgb(204, 204, 204);
 }
 
@@ -70,9 +66,7 @@ padding: 0;
 
 .nav>button {
   margin: 0 1rem 0 0;
-
   height: 3rem;
-  
   background-color: inherit;
   border: none;
 }
@@ -81,10 +75,20 @@ padding: 0;
 
 }
 
+.button-container>button{
+  margin: 0 1rem 0 0;
+  height: 3rem;  
+  background-color: inherit;
+  border: none;
+}
+
+.button-container>button:hover {
+
+}
+
+
 .section {
   max-height: calc(100% - 75px);
-
   overflow-y: auto;
-
   background-color: aqua;
 }
