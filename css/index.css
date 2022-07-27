@@ -23,8 +23,6 @@ body {
   border: solid;
   border-width: 3px;
   border-color: rgb(90, 117, 143);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 0px, rgba(0, 0, 0, 0.22) 15px 15px 15px 15px;
-
 }
 
 .about-me {
@@ -34,7 +32,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(204, 204, 204);
+  background: rgb(233, 233, 233);
   position: relative;
 }
 
@@ -44,19 +42,19 @@ body {
   height: 100%;
   top: 0;
   right: 0;
-  width: 2px;
+  width: 3px;
   background-color: rgb(90, 117, 143);
 
 }
 
 .information {
   flex: 1;
-  background: rgb(204, 204, 204);
+  background: rgb(233, 233, 233);
 }
 
 .nav {
   height: 75px;
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(233, 233, 233);
   display: flex;
   align-items: center;
   padding: 0 1rem;
@@ -66,7 +64,7 @@ body {
 .divisor-nav {
 
   position: absolute;
-  height: 2px;
+  height: 3px;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -115,6 +113,30 @@ body {
   margin-bottom: 30px;
   font-size: 2.4rem;
   font-weight: bold;
+  color: rgb(90, 117, 143);
+}
+
+.content-box {
+  font-size: 1.2rem color rgb(90, 117, 143);
+  border: solid;
+  border-color: rgb(90, 117, 143);
+  border-radius: 5px;
+  border-width: 3px;
+  margin: 10px
+}
+
+.content-title {
+  margin: 5px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: rgb(90, 117, 143);
+}
+
+.content-text {
+
+  margin: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
   color: rgb(90, 117, 143);
 }
 
