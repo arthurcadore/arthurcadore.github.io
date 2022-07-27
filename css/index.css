@@ -132,6 +132,14 @@ body {
   color: rgb(90, 117, 143);
 }
 
+.content-title:hover {
+  margin: 5px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: rgb(40, 61, 82);
+}
+
+
 .content-text {
 
   margin: 5px;
