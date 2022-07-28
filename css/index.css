@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+:root{
+  --divisors: #B20600;
+  --text: #112B3C;
+  --main-title: #B20600;
+  --text_title: #B20600;
+  --text_title_hover: #570A57;
+  --background: #ffffff;
+}
 
 body {
   font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
@@ -18,11 +26,16 @@ body {
   display: flex;
 }
 
+.image-container{
+  display:flex;
+  justify-content: center;
+}
+
 .img-header {
   border-radius: 40px;
   border: solid;
-  border-width: 4px;
-  border-color: rgb(27, 43, 61);
+  border-width: 1px;
+  border-color: var(--divisors);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   max-width: 90%;
   max-height: 90%;
@@ -36,7 +49,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(248, 248, 248);
+  background: var(--background);
   position: relative;
 }
 
@@ -45,33 +58,34 @@ body {
   height: 100%;
   top: 0;
   right: 0;
-  width: 3px;
-  background-color: rgb(27, 43, 61);
+  width: 1px;
+  background-color: var(--divisors);
 }
 
 .information {
   flex: 1;
-  background: rgb(248, 248, 248);
+  background: var(--background);
   max-height: 100%;
   overflow: auto;
 }
 
 .nav {
   height: 75px;
-  background-color: rgb(248, 248, 248);
+  background-color: var(--background);
   display: flex;
   align-items: center;
   padding: 0 1rem;
-  position: relative;
+  position: fixed;
+  width: 100%;
 }
 
 .divisor-nav {
   position: absolute;
-  height: 4px;
+  height: 1px;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(27, 43, 61);
+  background-color: var(--divisors);
 }
 
 .nav>button {
@@ -82,13 +96,13 @@ body {
   font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(27, 43, 61);
+  color: var(--text);
 }
 
 .nav>button:hover {
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(40, 61, 82);
+  color: var(--text_hover);
 }
 
 .button-container>button {
@@ -106,7 +120,7 @@ body {
   font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(27, 43, 61);
+  color: var(--text_title);
   text-decoration: none
 }
 
@@ -114,8 +128,28 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
-  color: rgb(2, 67, 131);
+  color: var(--text_hover);
 }
+
+.text-title{
+  margin: 0 1rem 0 0;
+  height: 3rem;
+  background-color: inherit;
+  border: none;
+  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text_title);
+  text-decoration: none
+}
+
+.text-title:hover{
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  color: var(--text_hover);
+}
+
 
 .button-icon{
   margin: 0 1rem 0 0;
@@ -125,7 +159,7 @@ body {
   font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(27, 43, 61);
+  color: var(--main-title);
   text-decoration: none
 }
 
@@ -136,43 +170,48 @@ body {
   color: rgb(2, 67, 131);
 }
 
+
+.title-container{
+  display:flex;
+  justify-content: center;
+}
+
 .title {
   margin-top: 50px;
   margin-bottom: 30px;
   font-size: 2.4rem;
   font-weight: bold;
-  color: rgb(27, 43, 61);
+  color: var(--main-title);
 }
 
 .container-content{
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top:15px;
+  
+  padding: 128px 80px 40px 80px;
 }
 
 .content-box {
-  font-size: 1.2rem color rgb(27, 43, 61);
-  border: solid;
-  border-color: rgb(27, 43, 61);
-  border-radius: 5px;
-  border-width: 3px;
+  font-size: 1.2rem color var(--divisors);
+  border-bottom: solid;
+  border-color: var(--divisors);
+  border-width: 1px;
   margin: 10px;
   min-height: 150px;
+  margin-bottom: 40px;
+  padding: 16px;
 }
 
 .content-title {
   margin: 5px;
   font-weight: bold;
   font-size: 1.3rem;
-  color: rgb(27, 43, 61);
+  color: var(--text);
 }
 
 
 .content-text {
   margin: 5px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: rgb(27, 43, 61);
+  font-size: 1.25rem;
+  color: var(--text);
 }
 
 
