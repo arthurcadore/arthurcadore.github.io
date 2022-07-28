@@ -21,8 +21,8 @@ body {
 .img-header {
   border-radius: 40px;
   border: solid;
-  border-width: 3px;
-  border-color: rgb(90, 117, 143);
+  border-width: 4px;
+  border-color: rgb(27, 43, 61);
 }
 
 .about-me {
@@ -32,7 +32,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(233, 233, 233);
+  background: rgb(255, 255, 255);
   position: relative;
 }
 
@@ -43,22 +43,21 @@ body {
   top: 0;
   right: 0;
   width: 3px;
-  background-color: rgb(90, 117, 143);
+  background-color: rgb(27, 43, 61);
 
 }
 
 .information {
   flex: 1;
-  background: rgb(233, 233, 233);
+  background: rgb(255, 255, 255);
   max-height: 100%;
   overflow: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+
 }
 
 .nav {
   height: 75px;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   padding: 0 1rem;
@@ -68,11 +67,11 @@ body {
 .divisor-nav {
 
   position: absolute;
-  height: 3px;
+  height: 4px;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(90, 117, 143);
+  background-color: rgb(27, 43, 61);
 
 }
 
@@ -84,7 +83,7 @@ body {
   font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(90, 117, 143);
+  color: rgb(27, 43, 61);
 }
 
 .nav>button:hover {
@@ -98,18 +97,25 @@ body {
   height: 3rem;
   background-color: inherit;
   border: none;
-  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: rgb(90, 117, 143);
 }
 
-.button-container>button:hover {
+.button-content{
+  margin: 0 1rem 0 0;
+  height: 3rem;
+  background-color: inherit;
+  border: none;
+  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(27, 43, 61);
+  text-decoration: none
+}
+
+.button-content:hover{
   font-size: 1.5rem;
   font-weight: bold;
   font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
-  color: rgb(40, 61, 82);
-
+  color: rgb(2, 67, 131);
 }
 
 .title {
@@ -117,39 +123,38 @@ body {
   margin-bottom: 30px;
   font-size: 2.4rem;
   font-weight: bold;
-  color: rgb(90, 117, 143);
+  color: rgb(27, 43, 61);
+}
+
+.container-content{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top:15px;
 }
 
 .content-box {
-  font-size: 1.2rem color rgb(90, 117, 143);
+  font-size: 1.2rem color rgb(27, 43, 61);
   border: solid;
-  border-color: rgb(90, 117, 143);
+  border-color: rgb(27, 43, 61);
   border-radius: 5px;
   border-width: 3px;
-  margin: 10px
+  margin: 10px;
+  min-height: 150px;
 }
 
 .content-title {
   margin: 5px;
   font-weight: bold;
   font-size: 1.3rem;
-  color: rgb(90, 117, 143);
-}
-
-.content-title:hover {
-  margin: 5px;
-  font-weight: bold;
-  font-size: 1.4rem;
-  color: rgb(40, 61, 82);
+  color: rgb(27, 43, 61);
 }
 
 
 .content-text {
-
   margin: 5px;
   font-weight: bold;
   font-size: 1.1rem;
-  color: rgb(90, 117, 143);
+  color: rgb(27, 43, 61);
 }
 
 
