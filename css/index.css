@@ -220,3 +220,10 @@ body {
   overflow-y: auto;
   background-color: aqua;
 }
+
+.content-references{
+  margin-top: 25px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text_title);
+}
