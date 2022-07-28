@@ -120,7 +120,7 @@ body {
   font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--text_title);
+  color: var(--text_hover);
   text-decoration: none
 }
 
@@ -128,7 +128,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
-  color: var(--text_hover);
+  color: var(--text_title);
 }
 
 .text-title{
@@ -159,7 +159,7 @@ body {
   font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--main-title);
+  color: var(--text);
   text-decoration: none
 }
 
@@ -167,7 +167,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
-  color: rgb(2, 67, 131);
+  color: var(--main-title)
 }
 
 
