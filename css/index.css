@@ -24,7 +24,10 @@ body {
   border-width: 4px;
   border-color: rgb(27, 43, 61);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  max-width: 90%;
+  max-height: 90%;
 }
+
 
 .about-me {
   width: 30%;
@@ -38,14 +41,12 @@ body {
 }
 
 .divisor {
-
   position: absolute;
   height: 100%;
   top: 0;
   right: 0;
   width: 3px;
   background-color: rgb(27, 43, 61);
-
 }
 
 .information {
@@ -53,7 +54,6 @@ body {
   background: rgb(248, 248, 248);
   max-height: 100%;
   overflow: auto;
-
 }
 
 .nav {
@@ -63,18 +63,15 @@ body {
   align-items: center;
   padding: 0 1rem;
   position: relative;
-  
 }
 
 .divisor-nav {
-
   position: absolute;
   height: 4px;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: rgb(27, 43, 61);
-
 }
 
 .nav>button {
