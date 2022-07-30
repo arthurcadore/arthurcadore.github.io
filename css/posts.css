@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+  --divisors: #B20600;
+  --text: #112B3C;
+  --main-title: #B20600;
+  --text_title: #B20600;
+  --text_title_hover: #570A57;
+  --background: #ffffff;
+}
+
+body {
+  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  background-color: #03090d;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.screen {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.image-container{
+  display:flex;
+  justify-content: center;
+}
+
+.img-header {
+  border-radius: 40px;
+  border: solid;
+  border-width: 1px;
+  border-color: var(--divisors);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+
+.about-me {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+  position: relative;
+}
+
+.divisor {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 1px;
+  background-color: var(--divisors);
+}
+
+.information {
+  flex: 1;
+  background: var(--background);
+  max-height: 100%;
+  overflow: auto;
+}
+
+.nav {
+  height: 75px;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  position: fixed;
+  width: 100%;
+}
+
+.divisor-nav {
+  position: absolute;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--divisors);
+}
+
+.nav>button {
+  margin: 0 1rem 0 0;
+  height: 3rem;
+  background-color: inherit;
+  border: none;
+  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.nav>button:hover {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text_hover);
+}
+
+.button-container>button {
+  margin: 0 1rem 0 0;
+  height: 3rem;
+  background-color: inherit;
+  border: none;
+}
+
+.button-content{
+  margin: 0 1rem 0 0;
+  height: 3rem;
+  background-color: inherit;
+  border: none;
+  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text_hover);
+  text-decoration: none
+}
+
+.button-content:hover{
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  color: var(--text_title);
+}
+
+.text-title{
+  margin: 0 1rem 0 0;
+  height: 3rem;
+  background-color: inherit;
+  border: none;
+  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text_title);
+  text-decoration: none
+}
+
+.button-icon{
+  margin: 0 1rem 0 0;
+  height: 3rem;
+  background-color: inherit;
+  border: none;
+  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text);
+  text-decoration: none
+}
+
+.button-icon:hover{
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  color: var(--main-title)
+}
+
+
+.title-container{
+  display:flex;
+  justify-content: center;
+}
+
+.title {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--main-title);
+}
+
+.container-content{
+  
+  padding: 128px 80px 40px 80px;
+}
+
+.content-box {
+  font-size: 1.2rem color var(--divisors);
+  margin: 10px;
+  min-height: 150px;
+  margin-bottom: 40px;
+  padding: 16px;
+}
+
+.content-title {
+  margin: 5px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--text);
+}
+
+
+.content-text {
+  margin: 5px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 1.25rem;
+  color: var(--text);
+}
+
+
+.section {
+  max-height: calc(100% - 75px);
+  overflow-y: auto;
+  background-color: aqua;
+}
+
+.content-references{
+  margin-top: 25px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text_title);
+}
