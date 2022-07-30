@@ -30,30 +30,61 @@
 
     <div class="information">
       <div class="nav">
-        <button><a class="button-content" href="../index.html">Home</a></button>
-        <button><a class="button-content" href="./development.html">Development</a></button>
-        <button><a class="button-content" href="./research.html">Research</a></button>
-        <button><a class="button-content" href="./electronics.html">Electronics</a></button>
-        <button><a class="button-content" href="./tags.html">Tags</a></button>
-        <button><a class="button-content" href="./about.html">About</a></button>
+        <button><a class="button-content" href="../../index.html">Home</a></button>
+        <button><a class="button-content" href="../development.html">Development</a></button>
+        <button><a class="button-content" href="../research.html">Research</a></button>
+        <button><a class="button-content" href="../electronics.html">Electronics</a></button>
+        <button><a class="button-content" href="../tags.html">Tags</a></button>
+        <button><a class="button-content" href="../about.html">About</a></button>
         <div class="divisor-nav"></div>
       </div>
 
       <div class="container-content">
         <div class="content-box">
           <div class="content-title"><a class="text-title">Tri-Phase Signal Generator Using Ampop</a>
-              <div class="content-references">Thursday - 28/07/2022</div>
+              <div class="content-references">Thursday - 30/07/2022</div>
             </div>
 
           <div class="content-text">
             Tri-phase circuits can be use to transmit power with high efficiency in comparation to single phase circuits, why? The difenrence in transmisson is caused by number of cables, in single phase, we need two cables to transmit power (phase and neutral). But, in tri-phase circuit, with only one cabe more, you can transmit 3 times the original power!
-            
           </div>
 
           <div class="content-text">
             The circuit recives a square wave in input to convert into 3 pure sine waves in output. The input wave can be generate by a CI 555, with 60Hz frequency ajusted. The frequency value need to be in this range for this circuit because the capacitors and resistors values are determinated to filter armonics after 100Hz.          
           </div>
-        </div>
+
+          <div class="content-text">
+            In the image below, the first section of the circuit presented, your purpose is recive the square wave (represented by "A"), and amplify it. 
+          </div>
+          <img  class="content-img" src="/resources/img/electronics/diagram1.png">
+
+          <div class="content-text">
+            The amplified signal (represented by "B"), is now ready to be filtered, this job is done by the next ampop block, with filters all frequencies after 100Hz. This mean that all armonics of the original wave are cancelled, resulting in a pure wave form at the output.         
+           </div>
+           <div class="content-text">
+            OBS: Remember that a square wave with a frequency of "x" is a composition of all armonics started by "x" and adding all its odd multiples.
+           </div>
+
+           <div class="content-text">
+             Once the wave is filtered (represented in "C"), the circuit can dephase the wave in 120° to get the second signal (represented in "D"), and than amplified it in the next ampop block:
+           </div>
+           <img  class="content-img" src="/resources/img/electronics/diagram2.png">
+
+           <div class="content-text">
+             For get tri-phase signal, the circuit needs in series the previous block more one time, to dephase more 120̣°, and get all signals. 
+          </div>
+          
+          <div class="content-text">
+            And than, the circuit is done, below is all components connected together.
+          </div>
+          
+          <img  class="content-img" src="/resources/img/electronics/diagram3.png">
+          
+          <div class="content-text"> 
+            With the tri-phase signal finished, to use it for power transmisson for example, the output signals can feed MOSFETs to increase the signal amplitude to 220VAC.  
+          </div>
+      </div>
+
       </div>
     </div>
   </div>

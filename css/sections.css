@@ -143,6 +143,12 @@ body {
   text-decoration: none
 }
 
+.text-title:hover{
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  color: var(--text_hover);
+}
 
 
 .button-icon{
@@ -189,7 +195,7 @@ body {
   border-color: var(--divisors);
   border-width: 1px;
   margin: 10px;
-
+  min-height: 150px;
   margin-bottom: 40px;
   padding: 16px;
 }
@@ -216,15 +222,8 @@ body {
 }
 
 .content-references{
-  text-decoration: none;
   margin-top: 25px;
   font-size: 1.25rem;
   font-weight: bold;
   color: var(--text_title);
 }
-  .content-references:hover{
-    font-size: 1.25rem;
-    font-weight: bold;
-    font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
-    color: var(--text_hover);
-  }
