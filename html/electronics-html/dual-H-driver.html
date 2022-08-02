@@ -41,25 +41,25 @@
 
       <div class="container-content">
         <div class="content-box">
-          <div class="content-title"><a class="text-title">Tri-Phase Signal Generator Using Ampop</a>
-              <div class="content-references">Saturday - 30/07/2022</div>
+          <div class="content-title"><a class="text-title">Dual 'H' DC Motor Driver</a>
+              <div class="content-references">Tuesday - 02/08/2022</div>
             </div>
 
           <div class="content-text">
-            Tri-phase circuits can be use to transmit power with high efficiency in comparation to single phase circuits, why? The difenrence in transmisson is caused by number of cables, in single phase, we need two cables to transmit power (phase and neutral). But, in tri-phase circuit, with only one cabe more, you can transmit 3 times the original power!
+            In some DC applications we need to feed a load (circuit, component or object) in way that allow us to change circuts polarity. The circuit presented in this topic can provide this operation. 
           </div>
 
           <div class="content-text">
-            The circuit recives a square wave in input to convert into 3 pure sine waves in output. The input wave can be generate by a CI 555, with 60Hz frequency ajusted. The frequency value need to be in this range for this circuit because the capacitors and resistors values are determinated to filter armonics after 100Hz.          
+            First of all, the circuit was assembled in TBJ transistors for testing polarity and load, in sequence, the same circuit can supply more load by addition of relays in circuit that can provide much more power. 
           </div>
 
           <div class="content-text">
-            In the image below, the first section of the circuit presented, your purpose is recive the square wave (represented by "A"), and amplify it. 
+            In the image below, is presented the circuit use to drive loads with TBJ transistors. 
           </div>
-          <img  class="content-img" src="/resources/img/electronics/diagram1.png">
+          <img  class="content-img" src="/resources/img/electronics/diagram5.png">
 
           <div class="content-text">
-            The amplified signal (represented by "B"), is now ready to be filtered, this job is done by the next ampop pack, with filters all frequencies after 100Hz. This mean that all armonics of the original wave are cancelled, resulting in a pure wave form at the output.         
+            In "control" input we only need to suplly the side thats uses 
            </div>
            <div class="content-text">
             OBS: Remember that a square wave with a frequency of "x" is a composition of all armonics started by "x" and adding all its odd multiples.
@@ -68,7 +68,7 @@
            <div class="content-text">
              Once the wave is filtered (represented in "C"), the circuit can dephase the wave in 120° to get the second signal (represented in "D"), and than amplified it in the next ampop pack:
            </div>
-           <img  class="content-img" src="/resources/img/electronics/diagram2.png">
+           <img  class="content-img" src="/resources/img/electronics/diagram4.png">
 
            <div class="content-text">
              For get tri-phase signal, the circuit needs in series the previous pack more one time, to dephase more 120̣°, and get all signals. 
@@ -78,15 +78,6 @@
             And than, the circuit is done, below is all components connected together.
           </div>
           
-          <img  class="content-img" src="/resources/img/electronics/diagram3.png">
-          
-          <div class="content-text"> 
-            With the tri-phase signal finished, to use it for power transmisson for example, the output signals can feed MOSFETs to increase the signal amplitude to 220VAC.  
-          </div>
-
-          <div class="content-text">
-            The circuit components are: Fuction generator (represents the input square wave signals for CI 555), Osciloscope (collect the output waves signals, in this case, is collected tree signals for pure sine waves, and one wave to compare to the input), and the Ampop LM741.
-          </div>
       </div>
 
       </div>
