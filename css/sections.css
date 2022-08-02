@@ -195,7 +195,6 @@ body {
   border-color: var(--divisors);
   border-width: 1px;
   margin: 10px;
-  min-height: 150px;
   margin-bottom: 40px;
   padding: 16px;
 }
