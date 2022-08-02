@@ -32,9 +32,8 @@
       <div class="nav">
         <button><a class="button-content" href="../../index.html">Home</a></button>
         <button><a class="button-content" href="../development.html">Development</a></button>
-        <button><a class="button-content" href="../research.html">Research</a></button>
+        <button><a class="button-content" href="../research.html">Network Research</a></button>
         <button><a class="button-content" href="../electronics.html">Electronics</a></button>
-        <button><a class="button-content" href="../tags.html">Tags</a></button>
         <button><a class="button-content" href="../about.html">About</a></button>
         <div class="divisor-nav"></div>
       </div>
@@ -59,25 +58,28 @@
           <img  class="content-img" src="/resources/img/electronics/diagram5.png">
 
           <div class="content-text">
-            In "control" input we only need to suplly the side thats uses 
+            In "control" input, we feed the transistors gates in way to block the current in one way, and free it in other way. The power supply terminals are connected in ground and in the source of TBJ transistors. 
            </div>
+         
            <div class="content-text">
-            OBS: Remember that a square wave with a frequency of "x" is a composition of all armonics started by "x" and adding all its odd multiples.
+            Once the circuit is made with TBJ, we can added relays to it to provide more power. In the circuit below, two transistors are connected to relay's inductor to select the operation mode of the circuit. In this case, we only need two transistors instead of four, because the relays can opperate in two states. 
            </div>
 
            <div class="content-text">
-             Once the wave is filtered (represented in "C"), the circuit can dephase the wave in 120° to get the second signal (represented in "D"), and than amplified it in the next ampop pack:
+            The transistor's drain feeds the relays and the power supply is connected into relay's "select pin", like is shows below:  
            </div>
            <img  class="content-img" src="/resources/img/electronics/diagram4.png">
 
            <div class="content-text">
-             For get tri-phase signal, the circuit needs in series the previous pack more one time, to dephase more 120̣°, and get all signals. 
+
+            In the top part of the image presented, was added optocoplers to circut to isolate the control signals to the high power part of the circuit, this components transmit the signal with light, so, electronic pulses can't go back and damage the control circuit. 
+           
           </div>
-          
+
           <div class="content-text">
-            And than, the circuit is done, below is all components connected together.
+            In relay's inductor was also added "flyback" diodes to avoid high voltages spikes provided by current interruption in circut when the control signals stops. 
           </div>
-          
+    
       </div>
 
       </div>
