@@ -27,7 +27,7 @@ export function Index() {
                 </h2>
                 <div className="text-gray-600 dark:text-gray-400">
                   <p className="font-bold">IFSC, São José</p>
-                  <p>São José, SC, Brasil - 88103-310</p>
+                  <p>São José, SC, Brazil - 88103-310</p>
                 </div>
                 <div className="flex items-center justify-center md:justify-start gap-2 text-gray-900 dark:text-gray-100">
                   <Mail size={20} />
