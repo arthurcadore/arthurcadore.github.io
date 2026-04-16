@@ -48,7 +48,7 @@ export function Index() {
                   </a>
                 </div>
                 <p className="pt-8 text-gray-700 dark:text-gray-300 text-justify">
-                  I am a Telecommunications Engineer who graduated from IFSC in 2025 and am currently pursuing a Master's degree at ITA (Aeronautics Institute of Technology). I work as a Product Development Analyst in the networking equipment department, focusing on management software for the configuration, maintenance, and monitoring of infrastructure devices such as switches and access points (APs).
+                  I am a telecommunications engineer who graduated from IFSC in 2025 and am currently pursuing a master's degree at ITA (Aeronautics Institute of Technology). Currently working as a product development analyst in the networking equipment department, focusing on management software for the configuration, maintenance, and monitoring of infrastructure devices such as switches and access points (APs).
                 </p>
               </div>
 
