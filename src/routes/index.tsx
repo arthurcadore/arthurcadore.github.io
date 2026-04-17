@@ -100,92 +100,88 @@ export function Index() {
 
 
         <div className="max-w-5xl mx-auto px-8 py-16">
-          <section className="grid md:grid-cols-2 gap-x-12 gap-y-8 text-gray-700 dark:text-gray-300">
-            {/* Headers */}
-            <h2 className="text-3xl font-light text-gray-900 dark:text-white mb-1">
-              Academic Background
-            </h2>
-            <h2 className="text-3xl font-light text-gray-900 dark:text-white mb-1 hidden md:block">
-              Professional Background
-            </h2>
-
-            {/* Row 1 */}
-            <div className="flex items-start gap-4">
-              <img src={itaLogo} className="w-16 h-16 object-contain rounded-lg" />
-              <div>
-                <p className="font-semibold">
-                  Master's Degree in Telecommunications (EEC-T), Aeronautics Institute of Technology (ITA)
-                </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">2026 - Present</p>
-              </div>
-            </div>
-            <div className="space-y-6 md:space-y-0">
-              <h2 className="text-3xl font-light text-gray-900 dark:text-white mb-6 md:hidden">
-                Professional Background
+          <div className="grid md:grid-cols-2 gap-x-12 gap-y-12">
+            {/* Academic Background Column */}
+            <div className="space-y-8">
+              <h2 className="text-3xl font-light text-gray-900 dark:text-white mb-6">
+                Academic Background
               </h2>
-              <div className="flex items-start gap-4">
-                <img src={intelbrasLogo} className="w-16 h-16 object-contain rounded-lg" />
-                <div>
-                  <p className="font-semibold">
-                    Product Development Analyst - Business Networks, Intelbras
-                  </p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">2024 - Present</p>
+              <div className="space-y-8 text-gray-700 dark:text-gray-300">
+                <div className="flex items-start gap-4">
+                  <img src={itaLogo} className="w-16 h-16 object-contain rounded-lg" />
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">
+                      Master's Degree in Telecommunications (EEC-T), Aeronautics Institute of Technology (ITA)
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">2026 - Present</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <img src={ifscLogo} className="w-16 h-16 object-contain rounded-lg" />
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">
+                      Bachelor's Degree in Telecommunications Engineering, Federal Institute of Santa Catarina (IFSC)
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">2020 - 2025</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <img src={ifscLogo} className="w-16 h-16 object-contain rounded-lg" />
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">
+                      Technical Degree in Telecommunications – Federal Institute of Santa Catarina (IFSC)
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">2017 - 2020</p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Row 2 */}
-            <div className="flex items-start gap-4">
-              <img src={ifscLogo} className="w-16 h-16 object-contain rounded-lg" />
-              <div>
-                <p className="font-semibold">
-                  Bachelor's Degree in Telecommunications Engineering, Federal Institute of Santa Catarina (IFSC)
-                </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">2020 - 2025</p>
+            {/* Professional Background Column */}
+            <div className="space-y-8">
+              <h2 className="text-3xl font-light text-gray-900 dark:text-white mb-6">
+                Professional Background
+              </h2>
+              <div className="space-y-8 text-gray-700 dark:text-gray-300">
+                <div className="flex items-start gap-4">
+                  <img src={intelbrasLogo} className="w-16 h-16 object-contain rounded-lg" />
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">
+                      Product Development Analyst - Business Networks, Intelbras
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">2024 - Present</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <img src={intelbrasLogo} className="w-16 h-16 object-contain rounded-lg" />
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">
+                      Network Training Analyst - Technical Support, Intelbras
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">2021 - 2024</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <img src={intelbrasLogo} className="w-16 h-16 object-contain rounded-lg" />
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">
+                      Network and Infrastructure Analyst - Technical Support, Intelbras
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">2020 - 2021</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <img src={flinLogo} className="w-16 h-16 object-contain rounded-lg" />
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">
+                      Passive Fiber Optic Projects Intern, Flin (ISP)
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">2017 - 2020</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="flex items-start gap-4">
-              <img src={intelbrasLogo} className="w-16 h-16 object-contain rounded-lg" />
-              <div>
-                <p className="font-semibold">
-                  Network Training Analyst - Technical Support, Intelbras
-                </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">2021 - 2024</p>
-              </div>
-            </div>
-
-            {/* Row 3 */}
-            <div className="flex items-start gap-4">
-              <img src={ifscLogo} className="w-16 h-16 object-contain rounded-lg" />
-              <div>
-                <p className="font-semibold">
-                  Technical Degree in Telecommunications – Federal Institute of Santa Catarina (IFSC)
-                </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">2017 - 2020</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <img src={intelbrasLogo} className="w-16 h-16 object-contain rounded-lg" />
-              <div>
-                <p className="font-semibold">
-                  Network and Infrastructure Analyst - Technical Support, Intelbras
-                </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">2020 - 2021</p>
-              </div>
-            </div>
-
-            {/* Row 4 */}
-            <div className="hidden md:block"></div>
-            <div className="flex items-start gap-4">
-              <img src={flinLogo} className="w-16 h-16 object-contain rounded-lg" />
-              <div>
-                <p className="font-semibold">
-                  Passive Fiber Optic Projects Intern, Flin (ISP)
-                </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">2017 - 2020</p>
-              </div>
-            </div>
-          </section>
+          </div>
         </div>
       </main>
     </div>
