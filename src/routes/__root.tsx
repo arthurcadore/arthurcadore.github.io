@@ -65,6 +65,12 @@ function RootComponent() {
             >
               Software
             </Link>
+            <Link
+              to="/about"
+              className="text-gray-300 hover:text-white [&.active]:text-white [&.active]:font-bold"
+            >
+              About
+            </Link>
           </nav>
           <div className="md:hidden flex items-center gap-2">
             <button
@@ -105,6 +111,13 @@ function RootComponent() {
                 onClick={toggleMenu}
               >
                 Software
+              </Link>
+              <Link
+                to="/about"
+                className="text-gray-300 hover:text-white w-full p-2 rounded-md"
+                onClick={toggleMenu}
+              >
+                About
               </Link>
             </nav>
           </div>

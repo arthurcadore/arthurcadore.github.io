@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SoftwareRouteImport } from './routes/software'
 import { Route as PublicationsRouteImport } from './routes/publications'
 import { Route as MyPageRouteImport } from './routes/my-page'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SoftwareIndexRouteImport } from './routes/software/index'
 
@@ -30,6 +31,11 @@ const MyPageRoute = MyPageRouteImport.update({
   path: '/my-page',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -43,6 +49,7 @@ const SoftwareIndexRoute = SoftwareIndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/my-page': typeof MyPageRoute
   '/publications': typeof PublicationsRoute
   '/software': typeof SoftwareRouteWithChildren
@@ -50,6 +57,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/my-page': typeof MyPageRoute
   '/publications': typeof PublicationsRoute
   '/software': typeof SoftwareIndexRoute
@@ -57,6 +65,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/my-page': typeof MyPageRoute
   '/publications': typeof PublicationsRoute
   '/software': typeof SoftwareRouteWithChildren
@@ -64,12 +73,19 @@ export interface FileRoutesById {
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/my-page' | '/publications' | '/software' | '/software/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/my-page'
+    | '/publications'
+    | '/software'
+    | '/software/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/my-page' | '/publications' | '/software'
+  to: '/' | '/about' | '/my-page' | '/publications' | '/software'
   id:
     | '__root__'
     | '/'
+    | '/about'
     | '/my-page'
     | '/publications'
     | '/software'
@@ -78,6 +94,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
   MyPageRoute: typeof MyPageRoute
   PublicationsRoute: typeof PublicationsRoute
   SoftwareRoute: typeof SoftwareRouteWithChildren
@@ -104,6 +121,13 @@ declare module '@tanstack/react-router' {
       path: '/my-page'
       fullPath: '/my-page'
       preLoaderRoute: typeof MyPageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -137,6 +161,7 @@ const SoftwareRouteWithChildren = SoftwareRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
   MyPageRoute: MyPageRoute,
   PublicationsRoute: PublicationsRoute,
   SoftwareRoute: SoftwareRouteWithChildren,
