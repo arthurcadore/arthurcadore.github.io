@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import argos_main from '../../assets/argos-main.jpeg'
+import radar_utils from '../../assets/radarutils.png'
 export const Route = createFileRoute('/software/')({
   component: Software,
 })
@@ -10,6 +11,11 @@ function Software() {
       title: 'ARGOS-3 Simulator',
       imageUrl: argos_main,
       path: 'https://arthurcadore.github.io/argos3',
+    },
+    {
+      title: 'Radar Utils Library',
+      imageUrl: radar_utils,
+      path: 'https://arthurcadore.github.io/radarutils',
     },
   ]
 
